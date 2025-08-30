@@ -22,11 +22,11 @@ jobs:
 
       # Setting up java 21 for the runtime environment
       - name: Set up JDK 21
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v3
         with:
           java-version: '21'
           #The distribution parameter specifies the JDK distribution (adoptium,zulu,oraclejdk) to use for setting up the Java environment.
-          distribution: 'adoptium'
+          distribution: 'zulu'
 
       # Running tests and building the project using Gradle
       - name: Build with gradle
