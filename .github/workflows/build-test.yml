@@ -28,7 +28,11 @@ jobs:
           #The distribution parameter specifies the JDK distribution (adoptium,zulu,oraclejdk) to use for setting up the Java environment.
           distribution: 'zulu'
 
-      # Running tests and building the project using Gradle
+      # Running tests
+      - name: Run test
+        run: ./gradlew test
+
+      # Building the project using Gradle
       - name: Build with gradle
         # ./gradlew - executes the project's Gradle wrapper to ensure the correct Gradle version is used
         # clean - deletes all perviously built files to ensure a fresh build
