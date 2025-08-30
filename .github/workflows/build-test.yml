@@ -25,8 +25,8 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '21'
-          #The distribution parameter specifies the JDK distribution (adoptopenjdk,zulu,oraclejdk) to use for setting up the Java environment.
-          distribution: 'adoptopenjdk'
+          #The distribution parameter specifies the JDK distribution (adoptium,zulu,oraclejdk) to use for setting up the Java environment.
+          distribution: 'adoptium'
 
       # Running tests and building the project using Gradle
       - name: Build with gradle
